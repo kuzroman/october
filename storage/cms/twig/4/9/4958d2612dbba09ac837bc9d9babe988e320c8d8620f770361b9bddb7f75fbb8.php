@@ -10,7 +10,8 @@ class __TwigTemplate_4958d2612dbba09ac837bc9d9babe988e320c8d8620f770361b9bddb7f7
         $this->parent = false;
 
         $this->blocks = array(
-            '__internal_466939d7b16e09ad05ee101da0a4d1b7a587ebe794615f8d95c7098082636d79' => array($this, 'block___internal_466939d7b16e09ad05ee101da0a4d1b7a587ebe794615f8d95c7098082636d79'),
+            '__internal_53a40f6dd11665bafa6cbc0f7bbff13092c90f9415a6cee8a79495c35dd2125f' => array($this, 'block___internal_53a40f6dd11665bafa6cbc0f7bbff13092c90f9415a6cee8a79495c35dd2125f'),
+            '__internal_54afaec77ca8629a661c42d645c0d171c58e6552648eeb6a402089dbdfb8e1bf' => array($this, 'block___internal_54afaec77ca8629a661c42d645c0d171c58e6552648eeb6a402089dbdfb8e1bf'),
         );
     }
 
@@ -120,16 +121,14 @@ class __TwigTemplate_4958d2612dbba09ac837bc9d9babe988e320c8d8620f770361b9bddb7f7
             Layout file:
             <pre>";
         // line 88
-        echo twig_escape_filter($this->env, (string) $this->renderBlock("__internal_466939d7b16e09ad05ee101da0a4d1b7a587ebe794615f8d95c7098082636d79", $context, $blocks));
+        echo twig_escape_filter($this->env, (string) $this->renderBlock("__internal_53a40f6dd11665bafa6cbc0f7bbff13092c90f9415a6cee8a79495c35dd2125f", $context, $blocks));
         echo "</pre>
         </div>
         <div class=\"col-md-6\">
             Page file:
             <pre>";
         // line 92
-        $context['__cms_content_params'] = [];
-        echo $this->env->getExtension('CMS')->contentFunction("placeholder/page.txt"        , $context['__cms_content_params']        );
-        unset($context['__cms_content_params']);
+        echo twig_escape_filter($this->env, (string) $this->renderBlock("__internal_54afaec77ca8629a661c42d645c0d171c58e6552648eeb6a402089dbdfb8e1bf", $context, $blocks));
         echo "</pre>
         </div>
     </div>
@@ -162,10 +161,18 @@ class __TwigTemplate_4958d2612dbba09ac837bc9d9babe988e320c8d8620f770361b9bddb7f7
     }
 
     // line 88
-    public function block___internal_466939d7b16e09ad05ee101da0a4d1b7a587ebe794615f8d95c7098082636d79($context, array $blocks = array())
+    public function block___internal_53a40f6dd11665bafa6cbc0f7bbff13092c90f9415a6cee8a79495c35dd2125f($context, array $blocks = array())
     {
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('CMS')->contentFunction("placeholder/layout.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+    }
+
+    // line 92
+    public function block___internal_54afaec77ca8629a661c42d645c0d171c58e6552648eeb6a402089dbdfb8e1bf($context, array $blocks = array())
+    {
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('CMS')->contentFunction("placeholder/page.txt"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
     }
 
@@ -181,6 +188,6 @@ class __TwigTemplate_4958d2612dbba09ac837bc9d9babe988e320c8d8620f770361b9bddb7f7
 
     public function getDebugInfo()
     {
-        return array (  165 => 88,  157 => 114,  130 => 92,  123 => 88,  102 => 70,  85 => 56,  67 => 41,  28 => 4,  24 => 3,  20 => 1,);
+        return array (  172 => 92,  164 => 88,  156 => 114,  131 => 92,  124 => 88,  103 => 70,  86 => 56,  68 => 41,  29 => 4,  25 => 3,  21 => 1,);
     }
 }

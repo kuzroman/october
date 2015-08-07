@@ -1,6 +1,132 @@
-1438608915s:362:"a:6:{s:5:"mtime";i:1438607092;s:7:"content";s:93:"title = "about me"
+1438874715s:4456:"a:6:{s:5:"mtime";i:1438865419;s:7:"content";s:2138:"title = "about me"
 url = "/about"
-layout = "default"
+layout = "portfolio"
 is_hidden = "0"
 ==
-some description";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:16:"some description";}";
+<title></title>
+<meta charset="utf-8">
+<!--<link rel="icon" href="" type="image/x-icon">-->
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<!--<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>-->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.touchSwipe.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.horizonScroll.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<header>
+    <nav class="mainMenu">
+        <a href="/" class="mainMenuLogo">
+            <canvas width="252" height="140" id="canvasLogo">sorry, you can't see my logo, please setup Chrome</canvas>
+        </a>
+        <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/collection/">Portfolio</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <!--<li id="mm-menu"><a href="#">Menu</a></li>-->
+        </ul>
+    </nav>
+</header>
+
+<section id="one" class="slide">
+    <div class="table">
+        <div class="block">
+            <h2>Let's get started.</h2>
+            <p>
+                We are a hard working team that wants an opportunity to earn your business. Let us show you how the combination of hard work and technology can deliver outstanding performance.
+            </p>
+            <span class="line center"></span>
+
+            <a href="/contact" class="button2">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<section id="two" class="slide">
+    <div class="cubs">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section id="three" class="slide"></section>
+<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2059:"<title></title>
+<meta charset="utf-8">
+<!--<link rel="icon" href="" type="image/x-icon">-->
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<!--<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>-->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.touchSwipe.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.horizonScroll.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<header>
+    <nav class="mainMenu">
+        <a href="/" class="mainMenuLogo">
+            <canvas width="252" height="140" id="canvasLogo">sorry, you can't see my logo, please setup Chrome</canvas>
+        </a>
+        <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/collection/">Portfolio</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <!--<li id="mm-menu"><a href="#">Menu</a></li>-->
+        </ul>
+    </nav>
+</header>
+
+<section id="one" class="slide">
+    <div class="table">
+        <div class="block">
+            <h2>Let's get started.</h2>
+            <p>
+                We are a hard working team that wants an opportunity to earn your business. Let us show you how the combination of hard work and technology can deliver outstanding performance.
+            </p>
+            <span class="line center"></span>
+
+            <a href="/contact" class="button2">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<section id="two" class="slide">
+    <div class="cubs">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section id="three" class="slide"></section>
+<section id="four" class="slide"></section>";}";

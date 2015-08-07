@@ -1,4 +1,4 @@
-1438608915s:9153:"a:6:{s:5:"mtime";i:1438608312;s:7:"content";s:4486:"title = "Demonstration"
+1438874715s:9221:"a:6:{s:5:"mtime";i:1438608342;s:7:"content";s:4520:"title = "Demonstration"
 url = "/"
 layout = "default"
 is_hidden = "0"
@@ -94,7 +94,7 @@ is_hidden = "0"
         </div>
         <div class="col-md-6">
             Page file:
-            <pre>{% content "placeholder/page.txt" %}</pre>
+            <pre>{% filter escape %}{% content "placeholder/page.txt" %}{% endfilter %}</pre>
         </div>
     </div>
 
@@ -119,7 +119,7 @@ is_hidden = "0"
         <p><a href="{{ 'ajax'|page }}" class="btn btn-lg btn-default">Continue to AJAX framework</a></p>
     </div>
 
-</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:13:"Demonstration";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:4409:"<div class="jumbotron">
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:13:"Demonstration";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:4443:"<div class="jumbotron">
     <div class="container">
         {% content "welcome.htm" %}
     </div>
@@ -210,7 +210,7 @@ is_hidden = "0"
         </div>
         <div class="col-md-6">
             Page file:
-            <pre>{% content "placeholder/page.txt" %}</pre>
+            <pre>{% filter escape %}{% content "placeholder/page.txt" %}{% endfilter %}</pre>
         </div>
     </div>
 
