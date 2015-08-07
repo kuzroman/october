@@ -1,3 +1,6 @@
 .DS_Store
 *.log
 .idea
+/themes/demo/assets/node_modules
+/themes/demo/assets/bower_components
+/storage
