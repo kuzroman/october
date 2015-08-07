@@ -32,9 +32,9 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
             <canvas width=\"252\" height=\"140\" id=\"canvasLogo\">sorry, you can't see my logo, please setup Chrome</canvas>
         </a>
         <ul>
-            <li><a href=\"/about/\">About</a></li>
-            <li><a href=\"/collection/\">Portfolio</a></li>
-            <li><a href=\"/contact/\">Contact</a></li>
+            <li><a href=\"/about/\"><b>About</b></a></li>
+            <li><a href=\"/collection/\"><b>Portfolio</b></a></li>
+            <li><a href=\"/contact/\"><b>Contact</b></a></li>
             <!--<li id=\"mm-menu\"><a href=\"#\">Menu</a></li>-->
         </ul>
     </nav>
@@ -55,30 +55,37 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
 </section>
 
 <section id=\"two\" class=\"slide\">
-    <div class=\"cubs\">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!--<div class=\"cubs\">-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+    <!--</div>-->
 </section>
 
-<section id=\"three\" class=\"slide\"></section>
+<section id=\"three\" class=\"slide\">
+    <video class=\"programmerVideo\" autoplay=\"\" loop=\"\">
+        <source src=\"";
+        // line 65
+        echo twig_escape_filter($this->env, (isset($context["page"]) ? $context["page"] : null), "html", null, true);
+        echo "\">
+    </video>
+</section>
 <section id=\"four\" class=\"slide\"></section>";
     }
 
@@ -87,8 +94,13 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
         return "C:\\wamp\\www\\october/themes/demo/pages/about.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  85 => 65,  19 => 1,);
     }
 }

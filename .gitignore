@@ -3,4 +3,5 @@
 .idea
 /themes/demo/assets/node_modules
 /themes/demo/assets/bower_components
+/themes/demo/assets/images
 /storage

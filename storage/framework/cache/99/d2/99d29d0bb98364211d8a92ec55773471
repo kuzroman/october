@@ -1,4 +1,4 @@
-1438874715s:4456:"a:6:{s:5:"mtime";i:1438865419;s:7:"content";s:2138:"title = "about me"
+1438954665s:5108:"a:6:{s:5:"mtime";i:1438954059;s:7:"content";s:2464:"title = "about me"
 url = "/about"
 layout = "portfolio"
 is_hidden = "0"
@@ -19,9 +19,9 @@ is_hidden = "0"
             <canvas width="252" height="140" id="canvasLogo">sorry, you can't see my logo, please setup Chrome</canvas>
         </a>
         <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/collection/">Portfolio</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/about/"><b>About</b></a></li>
+            <li><a href="/collection/"><b>Portfolio</b></a></li>
+            <li><a href="/contact/"><b>Contact</b></a></li>
             <!--<li id="mm-menu"><a href="#">Menu</a></li>-->
         </ul>
     </nav>
@@ -42,31 +42,36 @@ is_hidden = "0"
 </section>
 
 <section id="two" class="slide">
-    <div class="cubs">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!--<div class="cubs">-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+    <!--</div>-->
 </section>
 
-<section id="three" class="slide"></section>
-<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2059:"<title></title>
+<section id="three" class="slide">
+    <video class="programmerVideo" autoplay="" loop="">
+        <!--/images/video/programmer.webm-->
+        <source src="{{ /images/video/programmer.webm }}">
+    </video>
+</section>
+<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2385:"<title></title>
 <meta charset="utf-8">
 <!--<link rel="icon" href="" type="image/x-icon">-->
 <link type="text/css" rel="stylesheet" href="css/main.css">
@@ -82,9 +87,9 @@ is_hidden = "0"
             <canvas width="252" height="140" id="canvasLogo">sorry, you can't see my logo, please setup Chrome</canvas>
         </a>
         <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/collection/">Portfolio</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/about/"><b>About</b></a></li>
+            <li><a href="/collection/"><b>Portfolio</b></a></li>
+            <li><a href="/contact/"><b>Contact</b></a></li>
             <!--<li id="mm-menu"><a href="#">Menu</a></li>-->
         </ul>
     </nav>
@@ -105,28 +110,33 @@ is_hidden = "0"
 </section>
 
 <section id="two" class="slide">
-    <div class="cubs">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!--<div class="cubs">-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+        <!--<div></div>-->
+    <!--</div>-->
 </section>
 
-<section id="three" class="slide"></section>
+<section id="three" class="slide">
+    <video class="programmerVideo" autoplay="" loop="">
+        <!--/images/video/programmer.webm-->
+        <source src="{{ /images/video/programmer.webm }}">
+    </video>
+</section>
 <section id="four" class="slide"></section>";}";

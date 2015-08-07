@@ -23,11 +23,11 @@ header {
 }
 header .mainMenuLogo {
   float: left;
-  margin: 10px;
+  margin: 10px 10px 5px 10px;
 }
 .mainMenu ul {
   float: right;
-  margin: 12px 20px;
+  margin: 9px 20px 0;
 }
 .mainMenu li {
   float: right;
@@ -41,7 +41,7 @@ header .mainMenuLogo {
   font-size: 20px;
   position: relative;
 }
-.mainMenu li a:after {
+.mainMenu ul a:after {
   width: 100%;
   height: 1px;
   content: '';
@@ -51,6 +51,20 @@ header .mainMenuLogo {
   position: absolute;
   bottom: 0;
   transition: all 0.3s ease;
+}
+.mainMenu ul b {
+  position: relative;
+  z-index: 10;
+  font-weight: normal;
+}
+.mainMenu ul a:before {
+  width: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  box-shadow: 0 0 25px 10px #2C3E50;
 }
 .mainMenu li:hover a:after {
   opacity: 1;
@@ -68,8 +82,7 @@ section {
 }
 #one.slide {
   height: 100%;
-  /*background: url(/img/gif/insight.gif) no-repeat center;*/
-  background: #2c3e50;
+  background: #2c3e50 url(../images/gif/insight.gif) no-repeat center;
   background-attachment: fixed !important;
   background-size: cover;
 }
@@ -95,7 +108,7 @@ section {
 #three.slide {
   height: 600px;
   /*height: 100%;*/
-  background: #c0392b url(/img/programmer.jpg) no-repeat bottom center;
+  background: #c0392b url(../images/programmer.jpg) no-repeat bottom center;
   background-attachment: fixed !important;
   background-size: cover;
 }
@@ -104,7 +117,7 @@ section {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(/img/small/ripple.png) repeat; /* #00EAFF */
+  background: url(../images/small/ripple.png) repeat; /* #00EAFF */
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -124,7 +137,7 @@ section {
 .flickerGif {
   min-width: 100%;
   min-height: 100%;
-  background: url(/img/gif/static.gif) no-repeat center;
+  background: url(../images/gif/static.gif) no-repeat center;
   background-size: cover;
   opacity: 0.2;
   position: absolute;
@@ -132,9 +145,9 @@ section {
 .oldPaper {
   width: 100%;
   height: 100%;
-  /*background: url(/img/main-light.jpg) no-repeat center center;*/
-  /*background: url(/img/me.jpg) no-repeat center center;*/
-  background: url(/img/code.jpg) no-repeat center;
+  /*background: url(../images/main-light.jpg) no-repeat center center;*/
+  /*background: url(../images/me.jpg) no-repeat center center;*/
+  background: url(../images/code.jpg) no-repeat center;
   background-size: cover;
   opacity: 0.9;
   position: relative;
@@ -204,15 +217,15 @@ section {
 }
 
 /*.skill .js {*/
-  /*background: #d4d4d4 url(/img/logo/js_bw.png) no-repeat center;*/
+  /*background: #d4d4d4 url(../images/logo/js_bw.png) no-repeat center;*/
   /*background-size: 64%;*/
 /*}*/
 /*.skill .jQuery {*/
-  /*background: #d4d4d4 url(/img/logo/jQurery_bw.png) no-repeat center;*/
+  /*background: #d4d4d4 url(../images/logo/jQurery_bw.png) no-repeat center;*/
   /*background-size: 64%;*/
 /*}*/
 /*.skill .backbone {*/
-  /*background: #d4d4d4 url(/img/logo/backbone_bw.png) no-repeat center;*/
+  /*background: #d4d4d4 url(../images/logo/backbone_bw.png) no-repeat center;*/
   /*background-size: 64%;*/
   /*font-size: 18px;*/
 /*}*/
@@ -265,13 +278,13 @@ section {
 
 }
 .galleryWork_1 {
-  background: url(../img/bm/Moscow.jpg) no-repeat center;
+  background: url(../images/bm/Moscow.jpg) no-repeat center;
 }
 .galleryWork_2 {
-  background: url(../img/bm/Boys.jpg) no-repeat center;
+  background: url(../images/bm/Boys.jpg) no-repeat center;
 }
 .galleryWork_3 {
-  background: url(../img/bm/Church.jpg) no-repeat center;
+  background: url(../images/bm/Church.jpg) no-repeat center;
 }
 
 
@@ -288,6 +301,7 @@ section {
 .table {
   height: 100%;
   display: table;
+  margin: 100px auto;
 }
 .block {
   width: 50%;
@@ -369,23 +383,23 @@ section {
   -webkit-transition: all .2s ease 0s;
   transition: all .2s ease 0s;
   border-radius: 2px;
-  border: 2px solid #0cf;
+  border: 2px solid #ea6446;
   -webkit-animation: shadow 1s ease 0s infinite normal;
   animation: shadow 1s ease 0s infinite normal;
   position: relative;
   overflow: hidden;
 }
 .button2:hover {
-  color: #0cf;
-  background: #fff;
+  color: #ea6446;
+  background: #2c3e50;
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
 .button2:before {
   content: '';
-  border-left: 35px solid transparent;
-  border-right: 38px solid transparent;
-  border-top: 35px solid #ea6446;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #ea6446;
   position: absolute;
   left: -75px;
   top: 75px;
@@ -394,7 +408,7 @@ section {
 }
 .button2:hover:before {
   top: 18px;
-  left: -24px;
+  left: -30px;
 }
 
 
