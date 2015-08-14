@@ -19,12 +19,27 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
         echo "<title></title>
 <meta charset=\"utf-8\">
 <!--<link rel=\"icon\" href=\"\" type=\"image/x-icon\">-->
-<link type=\"text/css\" rel=\"stylesheet\" href=\"css/main.css\">
+<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+        // line 4
+        echo $this->env->getExtension('CMS')->themeFilter("assets/css/main.css");
+        echo "\">
 <!--<script type=\"text/javascript\" src=\"bower_components/jquery/dist/jquery.js\"></script>-->
-<script type=\"text/javascript\" src=\"/js/jquery.js\"></script>
-<script type=\"text/javascript\" src=\"/js/jquery/jquery.touchSwipe.js\"></script>
-<script type=\"text/javascript\" src=\"/js/jquery/jquery.horizonScroll.js\"></script>
-<script type=\"text/javascript\" src=\"js/main.js\"></script>
+<script type=\"text/javascript\" src=\"";
+        // line 6
+        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/jquery.js");
+        echo "\"></script>
+<script type=\"text/javascript\" src=\"";
+        // line 7
+        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/jquery/jquery.touchSwipe.js");
+        echo "\"></script>
+<script type=\"text/javascript\" src=\"";
+        // line 8
+        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/jquery/jquery.horizonScroll.js");
+        echo "\"></script>
+<script type=\"text/javascript\" src=\"";
+        // line 9
+        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/main.js");
+        echo "\"></script>
 
 <header>
     <nav class=\"mainMenu\">
@@ -49,7 +64,7 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
             </p>
             <span class=\"line center\"></span>
 
-            <a href=\"/contact\" class=\"button2\">Contact Me</a>
+            <a href=\"/contact\" class=\"button2\">Portfolio</a>
         </div>
     </div>
 </section>
@@ -79,12 +94,12 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
 </section>
 
 <section id=\"three\" class=\"slide\">
-    <video class=\"programmerVideo\" autoplay=\"\" loop=\"\">
-        <source src=\"";
+    <!--<video class=\"programmerVideo\" autoplay=\"\" loop=\"\">-->
+        <!--<source src=\"";
         // line 65
-        echo twig_escape_filter($this->env, (isset($context["page"]) ? $context["page"] : null), "html", null, true);
-        echo "\">
-    </video>
+        echo $this->env->getExtension('CMS')->themeFilter("assets/images/video/programmer.webm");
+        echo "\">-->
+    <!--</video>-->
 </section>
 <section id=\"four\" class=\"slide\"></section>";
     }
@@ -101,6 +116,6 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
 
     public function getDebugInfo()
     {
-        return array (  85 => 65,  19 => 1,);
+        return array (  100 => 65,  41 => 9,  37 => 8,  33 => 7,  29 => 6,  24 => 4,  19 => 1,);
     }
 }

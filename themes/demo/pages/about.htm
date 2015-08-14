@@ -6,12 +6,12 @@ is_hidden = "0"
 <title></title>
 <meta charset="utf-8">
 <!--<link rel="icon" href="" type="image/x-icon">-->
-<link type="text/css" rel="stylesheet" href="css/main.css">
+<link type="text/css" rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}">
 <!--<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>-->
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/jquery/jquery.touchSwipe.js"></script>
-<script type="text/javascript" src="/js/jquery/jquery.horizonScroll.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="{{ 'assets/javascript/jquery.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/javascript/jquery/jquery.touchSwipe.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/javascript/jquery/jquery.horizonScroll.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/javascript/main.js'|theme }}"></script>
 
 <header>
     <nav class="mainMenu">
@@ -36,7 +36,7 @@ is_hidden = "0"
             </p>
             <span class="line center"></span>
 
-            <a href="/contact" class="button2">Contact Me</a>
+            <a href="/contact" class="button2">Portfolio</a>
         </div>
     </div>
 </section>
@@ -66,9 +66,8 @@ is_hidden = "0"
 </section>
 
 <section id="three" class="slide">
-    <video class="programmerVideo" autoplay="" loop="">
-        <!--/images/video/programmer.webm-->
-        <source src="{{ '/images/video/programmer.webm' }}">
-    </video>
+    <!--<video class="programmerVideo" autoplay="" loop="">-->
+        <!--<source src="{{ 'assets/images/video/programmer.webm'|theme }}">-->
+    <!--</video>-->
 </section>
 <section id="four" class="slide"></section>
