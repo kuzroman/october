@@ -18,27 +18,17 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
         // line 1
         echo "<title></title>
 <meta charset=\"utf-8\">
+
 <!--<link rel=\"icon\" href=\"\" type=\"image/x-icon\">-->
 <link type=\"text/css\" rel=\"stylesheet\" href=\"";
-        // line 4
+        // line 5
         echo $this->env->getExtension('CMS')->themeFilter("assets/css/main.css");
         echo "\">
-<!--<script type=\"text/javascript\" src=\"bower_components/jquery/dist/jquery.js\"></script>-->
-<script type=\"text/javascript\" src=\"";
-        // line 6
-        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/jquery.js");
-        echo "\"></script>
-<script type=\"text/javascript\" src=\"";
+
+<script src=\"";
         // line 7
-        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/jquery/jquery.touchSwipe.js");
-        echo "\"></script>
-<script type=\"text/javascript\" src=\"";
-        // line 8
-        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/jquery/jquery.horizonScroll.js");
-        echo "\"></script>
-<script type=\"text/javascript\" src=\"";
-        // line 9
-        echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/main.js");
+        echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/javascript/jquery.js", 1 => "assets/javascript/jquery/jquery-ui.min.js", 2 => "assets/javascript/jquery/jquery.touchSwipe.js", 3 => "assets/javascript/jquery/jquery.horizonScroll.js", 4 => "assets/javascript/main.js"));
+        // line 13
         echo "\"></script>
 
 <header>
@@ -94,12 +84,17 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
 </section>
 
 <section id=\"three\" class=\"slide\">
+    <div id='light'></div>
+
     <!--<video class=\"programmerVideo\" autoplay=\"\" loop=\"\">-->
         <!--<source src=\"";
-        // line 65
+        // line 71
         echo $this->env->getExtension('CMS')->themeFilter("assets/images/video/programmer.webm");
         echo "\">-->
     <!--</video>-->
+
+
+
 </section>
 <section id=\"four\" class=\"slide\"></section>";
     }
@@ -116,6 +111,6 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
 
     public function getDebugInfo()
     {
-        return array (  100 => 65,  41 => 9,  37 => 8,  33 => 7,  29 => 6,  24 => 4,  19 => 1,);
+        return array (  92 => 71,  32 => 13,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

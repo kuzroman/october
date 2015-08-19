@@ -1,17 +1,21 @@
-1439554433s:5352:"a:6:{s:5:"mtime";i:1439553830;s:7:"content";s:2586:"title = "about me"
+1439996968s:4992:"a:6:{s:5:"mtime";i:1439996358;s:7:"content";s:2406:"title = "about me"
 url = "/about"
 layout = "portfolio"
 is_hidden = "0"
 ==
 <title></title>
 <meta charset="utf-8">
+
 <!--<link rel="icon" href="" type="image/x-icon">-->
 <link type="text/css" rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}">
-<!--<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>-->
-<script type="text/javascript" src="{{ 'assets/javascript/jquery.js'|theme }}"></script>
-<script type="text/javascript" src="{{ 'assets/javascript/jquery/jquery.touchSwipe.js'|theme }}"></script>
-<script type="text/javascript" src="{{ 'assets/javascript/jquery/jquery.horizonScroll.js'|theme }}"></script>
-<script type="text/javascript" src="{{ 'assets/javascript/main.js'|theme }}"></script>
+
+<script src="{{[
+    'assets/javascript/jquery.js'
+    ,'assets/javascript/jquery/jquery-ui.min.js'
+    ,'assets/javascript/jquery/jquery.touchSwipe.js'
+    ,'assets/javascript/jquery/jquery.horizonScroll.js'
+    ,'assets/javascript/main.js'
+]|theme }}"></script>
 
 <header>
     <nav class="mainMenu">
@@ -66,19 +70,28 @@ is_hidden = "0"
 </section>
 
 <section id="three" class="slide">
+    <div id='light'></div>
+
     <!--<video class="programmerVideo" autoplay="" loop="">-->
         <!--<source src="{{ 'assets/images/video/programmer.webm'|theme }}">-->
     <!--</video>-->
+
+
+
 </section>
-<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2507:"<title></title>
+<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2327:"<title></title>
 <meta charset="utf-8">
+
 <!--<link rel="icon" href="" type="image/x-icon">-->
 <link type="text/css" rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}">
-<!--<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>-->
-<script type="text/javascript" src="{{ 'assets/javascript/jquery.js'|theme }}"></script>
-<script type="text/javascript" src="{{ 'assets/javascript/jquery/jquery.touchSwipe.js'|theme }}"></script>
-<script type="text/javascript" src="{{ 'assets/javascript/jquery/jquery.horizonScroll.js'|theme }}"></script>
-<script type="text/javascript" src="{{ 'assets/javascript/main.js'|theme }}"></script>
+
+<script src="{{[
+    'assets/javascript/jquery.js'
+    ,'assets/javascript/jquery/jquery-ui.min.js'
+    ,'assets/javascript/jquery/jquery.touchSwipe.js'
+    ,'assets/javascript/jquery/jquery.horizonScroll.js'
+    ,'assets/javascript/main.js'
+]|theme }}"></script>
 
 <header>
     <nav class="mainMenu">
@@ -133,8 +146,13 @@ is_hidden = "0"
 </section>
 
 <section id="three" class="slide">
+    <div id='light'></div>
+
     <!--<video class="programmerVideo" autoplay="" loop="">-->
         <!--<source src="{{ 'assets/images/video/programmer.webm'|theme }}">-->
     <!--</video>-->
+
+
+
 </section>
 <section id="four" class="slide"></section>";}";

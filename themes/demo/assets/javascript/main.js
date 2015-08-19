@@ -130,3 +130,207 @@ $(function () {
         console.log(e);
     });
 });
+
+////////////////////////////////////////////////////
+// small cubs
+
+// create 10 cubs
+// change the angle
+// throw them in the dif. part of the screen
+$(function() {
+    app.rollTheDice.init();
+});
+
+app.rollTheDice = {
+    $listCubs: []
+};
+app.rollTheDice.init = function () {
+    this.html.init();
+    this.event();
+
+    var listCubs = this.createCubs(15);
+    this.cubsInRandom();
+
+    this.drawCubs('#three', listCubs);
+    this.rollCubs(listCubs);
+    this.addDraggableEffect('.transformCub');
+};
+app.rollTheDice.html = {
+    init: function () {
+        this.someClass = $('.someClass');
+    }
+};
+app.rollTheDice.event = function () {
+    var self = this, html = this.html;
+};
+
+// выстроить в столбец
+app.rollTheDice.cubsInLine= function () {
+    var countEl = this.$listCubs.length
+        ,field = $('#three')
+        ,fieldH = field.height() // 600
+        ,countInRow = fieldH / 50 // 12
+        //,coordinateList = []
+        ,x = 0, y = 0
+        ;
+
+    for (var i = 0; i < countEl; i++) { // 15
+        //coordinateList[i] = {x:x, y:y};
+        this.$listCubs[i].animate({ left:x, top:y}, 1000).css('transform','rotate(0)');
+        if (i && i % (countInRow - 1) == 0) {
+            x = x + 50;
+            y = 0;
+        }
+        else y = y + 50;
+    }
+    //return coordinateList;
+};
+
+app.rollTheDice.cubsInRandom = function () {
+    var countEl = this.$listCubs.length
+        ,field = $('#three')
+        ;
+
+    for (var i = 0; i < countEl; i++) {
+        var x = this.getRandomNum (100, field.width() - 100 )
+            ,y = this.getRandomNum (100, field.height() - 100)
+            ,rotate = this.getRandomNum (-30, 30)
+        ;
+        this.$listCubs[i].animate({ left:x, top:y}, 1000).css('transform','rotate('+rotate+'deg)');
+    }
+    //return coordinateList;
+};
+
+
+app.rollTheDice.createCubs = function (countCubs) {
+    var listCubs = [];
+    for (var i = 0; i < countCubs; i++) {
+        var el = $('<img/>',{
+            'class':'transformCub'
+            ,src: 'themes/demo/assets/images/portfolio/small/'+(i+1)+'.jpg'
+            //,alt: i
+        });
+        listCubs.push(el);
+    }
+    this.$listCubs = listCubs;
+    return listCubs;
+};
+
+app.rollTheDice.drawCubs = function (idBox, listCubs) {
+    $(idBox).append(listCubs);
+};
+
+app.rollTheDice.rollCubs = function (listCubs) {
+    for (var i = 0, len = listCubs.length; i < len; i++) {
+        listCubs[i]
+        .animate({top:listCubs[i].data('top'), left:listCubs[i].data('left')}, 1000)
+        .css('transform', 'rotate('+listCubs[i].data('transform')+'deg)')
+        ;
+    }
+};
+
+app.rollTheDice.addDraggableEffect = function (classOrId) {
+    $(classOrId).draggable();
+};
+
+app.rollTheDice.cleanCubs = function (listCubs) {
+    var pos = -100;
+    for (var i = 0, len = listCubs.length; i < len; i++) {
+        listCubs[i].animate({top:pos, left:pos}, 1000);
+    }
+};
+
+app.rollTheDice.getRandomNum = function (min, max) {
+    return Math.floor ( Math.random() * (max - min) + min );
+};
+
+
+//$(document).ready(function(){
+//    $('#three').mousemove(function(event){
+//        $("#light").css({"top": event.pageY - 800, "left": event.pageX - 250});
+//    });
+//});
+
+
+//app.rollTheDice.compareDistanceCount = 0;
+// try push elements out
+// experiment function do not work correctly
+// app.rollTheDice.compareDistance(app.rollTheDice.$listCubs)
+//app.rollTheDice.compareDistance = function (listCubs) {
+//
+//    var d = 10, // distance - min отступ межды элементами
+//        w = listCubs[0].width()
+//        ,isMoved = false
+//        ;
+//
+//    for (var i = 0, len = listCubs.length; i < len; i++) {
+//
+//        var x1 = listCubs[i].data('left');
+//        var x1min = x1 - d;
+//        var x1max = x1 + w + d;
+//        var y1 = listCubs[i].data('top');
+//        var y1min = y1 - w - d;
+//        var y1max = y1 + d;
+//
+//        for (var e = 0; e < len; e++) {
+//            if (i == e) continue;
+//
+//            var x2 = listCubs[e].data('left');
+//            var x2min = x2 - d;
+//            var x2max = x2 + w + d;
+//            var y2 = listCubs[e].data('top') - w - d;
+//            var y2min = y2 - w - d;
+//            var y2max = y2 + d;
+//            var shiftX, shiftY, newX, newY;
+//
+//            if ( x1min <= x2min && x2min < x1max ) { // x1 левее
+//                // узнать смещение влево
+//                shiftX = x1max - x2min;
+//                // двигаем левее
+//                newX = x1 - shiftX;
+//                //isMoved = moveIn(listCubs[i], 'left', newX);
+//                listCubs[i].animate({left:newX}, 1000);
+//                listCubs[i].data({left:newX});
+//            }
+//            else if ( x1min <= x2max && x2max < x1max ) { // x1 правее
+//                shiftX = x2max - x1min;
+//                // двигаем правее
+//                newX = x1 + shiftX;
+//                //isMoved = moveIn(listCubs[i], 'left', newX);
+//                listCubs[i].animate({left:newX}, 1000);
+//                listCubs[i].data({left:newX});
+//            }
+//
+//            if ( y1min <= y2min && y2min < y1max ) { // y1 выше
+//                shiftY = y1max - y2min;
+//                // двигаем выше
+//                newY = y1 - shiftX;
+//                //isMoved = moveIn(listCubs[i], 'top', newY);
+//                listCubs[i].animate({top:newY}, 1000);
+//                listCubs[i].data({top:newY});
+//            }
+//            else if ( y1min <= y2max && y2max < y1max ) { // y1 ниже
+//                shiftY = y2max - y1min;
+//                // двигаем ниже
+//                newY = y1 + shiftX;
+//                //isMoved = moveIn(listCubs[i], 'top', newY);
+//                listCubs[i].animate({top:newY}, 1000);
+//                listCubs[i].data({top:newY});
+//            }
+//        }
+//    }
+//
+//};
+
+////////////////////////////////////////////////////
+
+/**
+ * вернет 2 целых числа
+ */
+//function get2integers (x) {
+//    var x1 = x - 1, x2;
+//    for (;  1 < x1 ; x1-- ) {
+//        x2 = x / x1;
+//        if ((x2 ^ 0) === x2) return [x1, x2]; // проверка целое ли число
+//    }
+//}

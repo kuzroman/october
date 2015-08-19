@@ -105,12 +105,25 @@ section {
   float: left;
 }
 
+
+/*#three * {*/
+  /*z-index: 100;*/
+  /*color: #000;*/
+  /*position: relative;*/
+/*}*/
 #three.slide {
   height: 600px;
   /*height: 100%;*/
+
   background: #c0392b url(../images/programmer.jpg) no-repeat bottom center;
   background-attachment: fixed !important;
   background-size: cover;
+
+  box-shadow: inset 0 0 85px 10px rgb(0, 0, 0);
+  /*background-color: #000;*/
+  /*overflow-x: hidden;*/
+  /*z-index: 20;*/
+  /*color: #000;*/
 }
 #three.slide:after {
   content: '';
@@ -439,3 +452,34 @@ section {
     height: 300px;
   }
 }
+
+.transformCub {
+  width: 50px;
+  height: 50px;
+  background: #004ab3;
+  position: absolute;
+  z-index: 100;
+  left: -100px;
+  top: -100px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 1s, width 1s, height 1s, transform 1s;
+}
+.transformCub:hover {
+  width: 75px;
+  height: 75px;
+  z-index: 150;
+  opacity: 1;
+  transform: rotate(0) !important;
+}
+
+/*#light {*/
+  /*position: absolute;*/
+  /*width: 500px;*/
+  /*height: 500px;*/
+  /*background-color: #fff;*/
+  /*z-index: 10;*/
+  /*-webkit-box-shadow: inset 0 0 150px 166px rgba(0,0,0,1);*/
+  /*-moz-box-shadow: inset 0 0 150px 166px rgba(0,0,0,1);*/
+  /*box-shadow: inset 0 0 150px 166px rgba(0,0,0,1);*/
+/*}*/
