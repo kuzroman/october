@@ -1,4 +1,4 @@
-1439996968s:4992:"a:6:{s:5:"mtime";i:1439996358;s:7:"content";s:2406:"title = "about me"
+1440074481s:5098:"a:6:{s:5:"mtime";i:1440069610;s:7:"content";s:2459:"title = "about me"
 url = "/about"
 layout = "portfolio"
 is_hidden = "0"
@@ -70,16 +70,16 @@ is_hidden = "0"
 </section>
 
 <section id="three" class="slide">
-    <div id='light'></div>
+    <!--<div id='light'></div>-->
 
     <!--<video class="programmerVideo" autoplay="" loop="">-->
         <!--<source src="{{ 'assets/images/video/programmer.webm'|theme }}">-->
     <!--</video>-->
 
-
+    <div id="descWork" class="descWork"></div>
 
 </section>
-<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2327:"<title></title>
+<section id="four" class="slide"></section>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:8:"about me";s:3:"url";s:6:"/about";s:6:"layout";s:9:"portfolio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2380:"<title></title>
 <meta charset="utf-8">
 
 <!--<link rel="icon" href="" type="image/x-icon">-->
@@ -146,13 +146,13 @@ is_hidden = "0"
 </section>
 
 <section id="three" class="slide">
-    <div id='light'></div>
+    <!--<div id='light'></div>-->
 
     <!--<video class="programmerVideo" autoplay="" loop="">-->
         <!--<source src="{{ 'assets/images/video/programmer.webm'|theme }}">-->
     <!--</video>-->
 
-
+    <div id="descWork" class="descWork"></div>
 
 </section>
 <section id="four" class="slide"></section>";}";

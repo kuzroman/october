@@ -149,7 +149,7 @@ app.rollTheDice.init = function () {
     this.event();
 
     var listCubs = this.createCubs(15);
-    this.cubsInRandom();
+    this.cubsInLine();
 
     this.drawCubs('#three', listCubs);
     this.rollCubs(listCubs);
@@ -161,30 +161,62 @@ app.rollTheDice.html = {
     }
 };
 app.rollTheDice.event = function () {
-    var self = this, html = this.html;
+    var self = this, html = this.html, resizeTimeoutId ;
+
+    $(window).on('resize', function() {
+        clearTimeout(resizeTimeoutId);
+        resizeTimeoutId = setTimeout(function () {
+            self.cubsInLine();
+        }, 500);
+    });
+
+};
+
+
+app.rollTheDice.lineOrRandom = function () {
+    if ($(window).width() < 650) this.cubsInLine(3);
+    else this.cubsInRandom();
 };
 
 // выстроить в столбец
-app.rollTheDice.cubsInLine= function () {
+app.rollTheDice.cubsInLine= function (inLine) {
     var countEl = this.$listCubs.length
+        ,elSize = 75
         ,field = $('#three')
         ,fieldH = field.height() // 600
-        ,countInRow = fieldH / 50 // 12
+        ,fieldW = field.width()
+
+        ,countInLine = inLine || Math.floor( fieldW / elSize )
+        ,countInRow = Math.ceil( countEl / countInLine )
         //,coordinateList = []
-        ,x = 0, y = 0
+
+        ,centerX = ( fieldW - (countInLine * elSize) ) / 2
+        ,centerY = ( fieldH - (countInRow * elSize) ) / 2
+        ,x = centerX, y = centerY
         ;
 
     for (var i = 0; i < countEl; i++) { // 15
         //coordinateList[i] = {x:x, y:y};
-        this.$listCubs[i].animate({ left:x, top:y}, 1000).css('transform','rotate(0)');
-        if (i && i % (countInRow - 1) == 0) {
-            x = x + 50;
-            y = 0;
+        if (!i) {} // don't change x,y
+        else if (i && (i % (countInLine) == 0) ) {
+            y = y + elSize;
+            x = centerX;
         }
-        else y = y + 50;
+        else x = x + elSize;
+        this.$listCubs[i].animate({left:x, top:y}, 1000).css('transform','rotate(0)');
     }
     //return coordinateList;
 };
+
+///**
+// * @param el jQuery
+// * @param axis ось
+// */
+//app.rollTheDice.getCenterPosition = function (el, countElements, axis) {
+//    var width = countElements;
+//    if (axis == 'x') (el.width() - elWidth) / 2;
+//    else (el.width() - elWidth) / 2;
+//};
 
 app.rollTheDice.cubsInRandom = function () {
     var countEl = this.$listCubs.length
@@ -203,12 +235,14 @@ app.rollTheDice.cubsInRandom = function () {
 
 
 app.rollTheDice.createCubs = function (countCubs) {
-    var listCubs = [];
+    var listCubs = [], self = this;
     for (var i = 0; i < countCubs; i++) {
         var el = $('<img/>',{
             'class':'transformCub'
             ,src: 'themes/demo/assets/images/portfolio/small/'+(i+1)+'.jpg'
             //,alt: i
+        }).on('click',function () {
+            self.cubsInLine(3);
         });
         listCubs.push(el);
     }
@@ -334,3 +368,17 @@ app.rollTheDice.getRandomNum = function (min, max) {
 //        if ((x2 ^ 0) === x2) return [x1, x2]; // проверка целое ли число
 //    }
 //}
+
+app.descWork = {};
+app.descWork.init = function () {
+    this.html.init();
+    this.event();
+};
+app.descWork.html = {
+    init: function () {
+        this.mainBox = $('#descWork');
+    }
+};
+app.descWork.event = function () {
+    var self = this, html = this.html;
+};

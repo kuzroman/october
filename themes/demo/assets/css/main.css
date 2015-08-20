@@ -106,24 +106,13 @@ section {
 }
 
 
-/*#three * {*/
-  /*z-index: 100;*/
-  /*color: #000;*/
-  /*position: relative;*/
-/*}*/
 #three.slide {
   height: 600px;
   /*height: 100%;*/
-
   background: #c0392b url(../images/programmer.jpg) no-repeat bottom center;
   background-attachment: fixed !important;
   background-size: cover;
-
   box-shadow: inset 0 0 85px 10px rgb(0, 0, 0);
-  /*background-color: #000;*/
-  /*overflow-x: hidden;*/
-  /*z-index: 20;*/
-  /*color: #000;*/
 }
 #three.slide:after {
   content: '';
@@ -473,13 +462,10 @@ section {
   transform: rotate(0) !important;
 }
 
-/*#light {*/
-  /*position: absolute;*/
-  /*width: 500px;*/
-  /*height: 500px;*/
-  /*background-color: #fff;*/
-  /*z-index: 10;*/
-  /*-webkit-box-shadow: inset 0 0 150px 166px rgba(0,0,0,1);*/
-  /*-moz-box-shadow: inset 0 0 150px 166px rgba(0,0,0,1);*/
-  /*box-shadow: inset 0 0 150px 166px rgba(0,0,0,1);*/
-/*}*/
+.descWork {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(64, 82, 97, 0.8) url(../images/small/ripple.png) repeat;
+  z-index: 50;
+}

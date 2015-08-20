@@ -84,7 +84,7 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
 </section>
 
 <section id=\"three\" class=\"slide\">
-    <div id='light'></div>
+    <!--<div id='light'></div>-->
 
     <!--<video class=\"programmerVideo\" autoplay=\"\" loop=\"\">-->
         <!--<source src=\"";
@@ -93,7 +93,7 @@ class __TwigTemplate_0367157a359c48a3d1d2dda965072f76786495e556fa4addaf0cf72da93
         echo "\">-->
     <!--</video>-->
 
-
+    <div id=\"descWork\" class=\"descWork\"></div>
 
 </section>
 <section id=\"four\" class=\"slide\"></section>";
